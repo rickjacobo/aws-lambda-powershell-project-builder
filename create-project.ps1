@@ -7,7 +7,7 @@ $Dir = "./" +  "$Project"
 $FileName = "$Project" + ".ps1"
 $FilePath = "$Dir/$FileName"
 $PublishName = "publish-" +"$Project" + ".ps1"
-$EditName = "edit-" + "$Project" + "ps1"
+$EditName = "edit-" + "$Project" + ".ps1"
 
 New-AWSPowerShellLambda -ScriptName $Project -Template Basic
 
