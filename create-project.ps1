@@ -6,8 +6,8 @@ $Memory = Read-Host "Enter Desired Memory Allocation ie, 198"
 $Dir = "./" +  "$Project"
 $FileName = "$Project" + ".ps1"
 $FilePath = "$Dir/$FileName"
-$PublishName = "$Project" + "-" + "publish.ps1"
-$EditName = "$Project" + "-" + "edit.ps1"
+$PublishName = "publish-" +"$Project" + ".ps1"
+$EditName = "edit-" + $Project" + "ps1"
 
 New-AWSPowerShellLambda -ScriptName $Project -Template Basic
 

@@ -23,12 +23,12 @@ pwsh create-project.ps1
     - Adding your credentials via 'aws configure'
 - Edit your project
 ````
-pwsh edit.ps1
+pwsh edit-<projectname>.ps1
 ````
   - Add your powershell code to the projects powershell script
 - Publish your code to lambda
 ````
-pwsh publish.ps1
+pwsh publish-<projectname>.ps1
 ````
 
 ## Additional Resources
