@@ -30,3 +30,6 @@ pwsh edit.ps1
 ````
 pwsh publish.ps1
 ````
+
+## Additional Resources
+- [Creating a PowerShell REST API](https://aws.amazon.com/blogs/developer/creating-a-powershell-rest-api/)
