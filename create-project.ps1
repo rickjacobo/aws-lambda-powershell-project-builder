@@ -11,7 +11,7 @@ $EditName = "edit-" + "$Project" + ".ps1"
 
 New-AWSPowerShellLambda -ScriptName $Project -Template Basic
 
-Write-Output "Publish-AWSPowerShellLambda -ScriptPath $FilePath -Name $Project -Region $Region -Memory $Memory" | Out-File $PublishName
+Write-Output "Publish-AWSPowerShellLambda -ScriptPath $FilePath -Name $Project -Region $Region -Memory $Memory -Timeout 10" | Out-File $PublishName
 
 Write-Output "vi $FilePath" | Out-File $EditName
 
