@@ -16,3 +16,4 @@ COPY setup.ps1 /lambda
 RUN pwsh setup.ps1
 RUN rm setup.ps1
 COPY create-project.ps1 /lambda
+CMD tail -f /dev/null

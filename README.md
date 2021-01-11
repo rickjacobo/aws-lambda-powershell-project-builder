@@ -6,7 +6,7 @@ A docker container with the dependencies required to create and publish PowerShe
 ## Usage
 - Start the container
 ````
-docker run -dit --name powershell-builder rickjacobo/lambda-powershell-project-builder pwsh
+docker run -dit --name powershell-builder rickjacobo/lambda-powershell-project-builder
 ````
 - Access the container
 ````
