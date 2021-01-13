@@ -65,7 +65,7 @@ If you are lacking in either of those areas head over to the Docker and learn ho
      vi /<projectname>/<projectname>.ps1
      ````
 
-If you don't have any code readily available feel free to use the sample code below
+If you don't have any code readily available feel free to append the code below to <projectname>.ps1.
 
 ````
 $Json = @"
