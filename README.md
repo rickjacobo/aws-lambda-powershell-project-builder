@@ -10,8 +10,7 @@ Fast forward to now...I quit my day job and started working more with AWS on my 
 
 ## See It In Action
 
-[Add Video Here]
-
+[![YouTube](http://img.youtube.com/vi/jHd2FU3ISIs/0.jpg)](https://youtu.be/jHd2FU3ISIs)
 
 
 ## How Do I Get Started
