@@ -68,22 +68,6 @@ If you are lacking in either of those areas head over to the Docker and learn ho
 If you don't have any code readily available feel free to use the sample code below
 
 ````
-# PowerShell script file to be executed as a AWS Lambda function. ^M
-# ^M
-# When executing in Lambda the following variables will be predefined.^M
-#   $LambdaInput - A PSObject that contains the Lambda function input data.^M
-#   $LambdaContext - An Amazon.Lambda.Core.ILambdaContext object that contains information about the currently running Lambda environment.^M
-#^M
-# The last item in the PowerShell pipeline will be returned as the result of the Lambda function.^M
-#^M
-# To include PowerShell modules with your Lambda function, like the AWS.Tools.S3 module, add a "#Requires" statement^M
-# indicating the module and version. If using an AWS.Tools.* module the AWS.Tools.Common module is also required.^M
-^M
-#Requires -Modules @{ModuleName='AWS.Tools.Common';ModuleVersion='4.1.7.0'}^M
-^M
-# Uncomment to send the input event to CloudWatch Logs^M
-# Write-Host (ConvertTo-Json -InputObject $LambdaInput -Compress -Depth 5)
-
 $Json = @"
 {
      "Message":"Hello, World!"
