@@ -3,6 +3,7 @@ cd $PSScriptRoot
 $Project = Read-Host "Enter Project Name"
 $Region = Read-Host "Enter AWS Region"
 $Memory = Read-Host "Enter Desired Memory Allocation ie, 198"
+$Timeout = Read-Host "Enter Lambda Timeout ie, 30"
 $Dir = "./" +  "$Project"
 $FileName = "$Project" + ".ps1"
 $FilePath = "$Dir/$FileName"
@@ -15,7 +16,7 @@ New-AWSPowerShellLambda -Directory $Project/$Project -ScriptName $Project -Templ
 
 cd $Project
 
-Write-Output "Publish-AWSPowerShellLambda -ScriptPath $FilePath -Name $Project -Region $Region -Memory $Memory" | Out-File $PublishName
+Write-Output "Publish-AWSPowerShellLambda -ScriptPath $FilePath -Name $Project -Region $Region -Memory $Memory" -Timeout $Timeout | Out-File $PublishName
 
 Write-Output "vi $FilePath" | Out-File $EditName
 
