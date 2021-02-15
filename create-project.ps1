@@ -16,7 +16,7 @@ New-AWSPowerShellLambda -Directory $Project/$Project -ScriptName $Project -Templ
 
 cd $Project
 
-Write-Output "Publish-AWSPowerShellLambda -ScriptPath $FilePath -Name $Project -Region $Region -Memory $Memory" -Timeout $Timeout | Out-File $PublishName
+Write-Output "Publish-AWSPowerShellLambda -ScriptPath $FilePath -Name $Project -Region $Region -Memory $Memory -Timeout $Timeout" | Out-File $PublishName
 
 Write-Output "vi $FilePath" | Out-File $EditName
 
