@@ -4,7 +4,7 @@
 
 I've been working with PowerShell since its beginning and haven't looked back since. Last year, while working on an serverless project for work, I decided to try Lambda on my own and deploy some of my PowerShell code to AWS to see how it works. 
 
-Fast forward to now...I quit my day job and started working more with AWS on my own while studying for some certs. I jumped back into Lambda and was reminded of how tedious it is to setup my environment for publishing PowerShell to AWS. Unfortunately, I didn't take any notes last year and wanted an easier way to ensure I could just focus on the code. That is where Docker comes in to save the day and our story begins - I created a Docker container with the dependencies required to publish PowerShell code to AWS. I also threw in a few helpful scripts to get a project up and running as quickly as possible. 
+I started working more with AWS on my own while studying for some certs. I jumped back into Lambda and was reminded of how tedious it is to setup my environment for publishing PowerShell to AWS. Unfortunately, I didn't take any notes last year and wanted an easier way to ensure I could just focus on the code. That is where Docker comes in to save the day and our story begins - I created a Docker container with the dependencies required to publish PowerShell code to AWS. I also threw in a few helpful scripts to get a project up and running as quickly as possible. 
 
 
 
