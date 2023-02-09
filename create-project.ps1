@@ -8,6 +8,7 @@ $Dir = "./" +  "$Project"
 $FileName = "$Project" + ".ps1"
 $FilePath = "$Dir/$FileName"
 $PublishName = "publish-" +"$Project" + ".ps1"
+$PublishNameZip = "publish-" +"$Project" + ".zip"
 $EditName = "edit-" + "$Project" + ".ps1"
 
 mkdir $Project
@@ -17,6 +18,8 @@ New-AWSPowerShellLambda -Directory $Project/$Project -ScriptName $Project -Templ
 cd $Project
 
 Write-Output "Publish-AWSPowerShellLambda -ScriptPath $FilePath -Name $Project -Region $Region -Memory $Memory -Timeout $Timeout" | Out-File $PublishName
+
+Write-Output "New-AWSPowerShellLambdaPackage -ScriptPath $FilePath -OutputPackage $PublishNameZip"
 
 Write-Output "vi $FilePath" | Out-File $EditName
 
