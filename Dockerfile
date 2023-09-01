@@ -6,11 +6,8 @@ apt-get install gnupg2 -y && \
 apt-get install software-properties-common -y && \
 apt-get install zip -y && \
 apt-get install git -y && \
+apt-get install dotnet-sdk-7.0 -y && \
 DEBIAN_FRONTEND=noninteractive apt-get install awscli -y
-RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
-RUN apt-add-repository https://packages.microsoft.com/ubuntu/22.04/prod
-RUN apt-get update
-RUN apt-get install dotnet-sdk-7.0 -y
 RUN mkdir /lambda
 WORKDIR /lambda
 COPY setup.ps1 /lambda
