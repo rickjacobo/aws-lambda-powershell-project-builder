@@ -12,6 +12,7 @@ $PublishNameZip = "publish-" +"$Project" + ".zip"
 $EditName = "edit-" + "$Project" + ".ps1"
 
 mkdir $Project
+mkdir $Project/resources
 
 New-AWSPowerShellLambda -Directory $Project/$Project -ScriptName $Project -Template Basic
 
