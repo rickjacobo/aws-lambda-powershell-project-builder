@@ -20,7 +20,7 @@ cd $Project
 
 Write-Output "Publish-AWSPowerShellLambda -ScriptPath $FilePath -Name $Project -Region $Region -Memory $Memory -Timeout $Timeout" | Out-File $PublishName
 
-Write-Output "New-AWSPowerShellLambdaPackage -ScriptPath $FilePath -OutputPackage $PublishNameZip" | Out-File $PublishName -Append
+Write-Output "New-AWSPowerShellLambdaPackage -ScriptPath $FilePath -OutputPackage $PublishNameZip" | Out-File resources/$PublishName -Append
 
 Write-Output "vi $FilePath" | Out-File $EditName
 
